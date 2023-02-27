@@ -1,8 +1,8 @@
 import { sl } from "date-fns/locale";
 import React from "react";
 
-const AppointmentOption = ({ appointment, setTreatment }) => {
-  const { name, slots } = appointment;
+const AppointmentOption = ({ appointmentOption, setTreatment }) => {
+  const { name, slots } = appointmentOption;
   return (
     <div>
       <div className="card shadow-xl">
@@ -14,9 +14,10 @@ const AppointmentOption = ({ appointment, setTreatment }) => {
           </p>
           <div className="card-actions justify-center">
             <label
+            disabled={slots.length === 0}
               htmlFor="booking-modal"
               className="btn btn-primary text-white"
-              onClick={()=> setTreatment(appointment)}
+              onClick={()=> setTreatment(appointmentOption)}
             >
               Book Appointment
             </label>

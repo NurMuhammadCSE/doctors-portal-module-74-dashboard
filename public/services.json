@@ -73,6 +73,7 @@
       ]
     },
     {
+      "_id": 6,
       "name": "Pediatric Dental",
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -94,7 +95,7 @@
       ]
     },
     {
-      "_id": 6,
+      "_id": 7,
       "name": "Oral Surgery",
       "slots": [
         "08.00 AM - 08.30 AM",
